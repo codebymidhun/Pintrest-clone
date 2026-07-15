@@ -15,16 +15,18 @@
 <body class="bg-gray-100">
 
     <!-- Navbar -->
+     
     <header class="bg-white sticky top-0 z-50 shadow-sm">
         <nav class="flex items-center gap-4 px-6 py-3">
 
             <!-- Logo -->
+
+
             <a href="#home" class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-200">
                 <i class="fa-brands fa-pinterest text-red-600 text-3xl"></i>
             </a>
 
           <!-- Search Bar -->
-
 
              <div class="relative flex-1">
 
@@ -36,10 +38,95 @@
                     placeholder="Search for ideas"
                     class="w-full bg-gray-100 rounded-full py-3 pl-14 pr-5 outline-none focus:ring-2 focus:ring-gray-300 focus:bg-white">
             </div>
-             
+
+       <!-- Sidebar -->
 
 
-    <!-- Profile Image -->
+<aside class="fixed top-0 left-0 h-screen w-20 bg-white border-r border-gray-200 flex flex-col items-center py-5">
+
+    <!-- Logo -->
+    <a href="#" class="w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 mb-10">
+        <i class="fa-brands fa-pinterest text-red-600 text-4xl"></i>
+    </a>
+
+    <div class="flex flex-col items-center gap-6">
+
+        <!-- Home -->
+        <label class="cursor-pointer">
+            <input type="radio" name="sidebar" class="peer hidden" checked>
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center
+                        peer-checked:bg-black peer-checked:text-white
+                        hover:bg-gray-100">
+                 <a href="#home">
+                <i class="fa-solid fa-house text-xl"></i>
+                </a>
+            </div>
+        </label>
+
+        <!-- Explore -->
+        <label class="cursor-pointer">
+            <input name="sidebar" class="peer hidden">
+            <div class="relative w-12 h-12 rounded-xl flex items-center justify-center
+                        peer-checked:bg-black peer-checked:text-white
+                        hover:bg-gray-100">
+                 <a href="./explore.html">
+                <i class="fa-regular fa-compass text-xl"></i>
+                </a>
+                <span class="absolute top-2 right-2 w-2 h-2 bg-red-600 rounded-full"></span>
+            </div>
+        </label>
+
+        <!-- Create -->
+        <label class="cursor-pointer">
+            <input  name="sidebar" class="peer hidden">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center
+                        peer-checked:bg-black peer-checked:text-white
+                        hover:bg-gray-100">
+                <a href="./explore.html">
+                <i class="fa-regular fa-square-plus text-xl"></i>
+                </a>
+            </div>
+        </label>
+
+        <!-- Notifications -->
+        <label class="cursor-pointer">
+            <input  name="sidebar" class="peer hidden">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center
+                        peer-checked:bg-black peer-checked:text-white
+                        hover:bg-gray-100">
+                 <a href="./notification.html">
+                <i class="fa-regular fa-bell text-xl"></i>
+                 </a>
+            </div>
+        </label>
+
+        <!-- Messages -->
+        <label class="cursor-pointer">
+            <input  name="sidebar" class="peer hidden">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center
+                        peer-checked:bg-black peer-checked:text-white
+                        hover:bg-gray-100">
+                 <a href="./messages.html">
+                <i class="fa-regular fa-comment-dots text-xl"></i>
+                </a>
+            </div>
+        </label>
+
+    </div>
+
+    <!-- Settings -->
+    <div class="mt-auto mb-5">
+        <label class="cursor-pointer">
+            <input name="sidebar" class="peer hidden">
+<div class="mt-auto mb-5">
+    <a href="./settings.html"
+       class="w-12 h-12 rounded-xl hover:bg-gray-100 flex items-center justify-center">
+        <i class="fa-solid fa-gear text-xl"></i>
+    </a>
+</div>
+
+</aside>
+
 <div class="relative group">
 
     <!-- Profile Image -->
@@ -55,7 +142,6 @@
     </div>
 
 </div>
-
             <!-- Dropdown -->
 
             <button class="w-8 h-8 rounded-full hover:bg-gray-200 flex items-center justify-center">
